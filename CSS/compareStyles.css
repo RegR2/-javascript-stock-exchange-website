@@ -1,0 +1,203 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #29b6f6;
+}
+
+.stocks-title {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  color: white;
+  font-weight: 100px;
+}
+
+.browser-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #29b6f6;
+  color: white;
+}
+
+.marquee-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.marquee-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.25rem;
+  font-size: 13px;
+  -moz-animation: marquee-container 70s linear infinite;
+  -webkit-animation: marquee-container 70s linear infinite;
+}
+
+@keyframes marquee-container {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+.marquee-price {
+  margin-right: 1rem;
+}
+
+.marquee-company {
+  width: fit-content;
+}
+
+.price-changes {
+  font-size: 12px;
+  margin-right: 0.5rem;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.spinner {
+  margin: 2rem;
+  color: #da7635;
+}
+
+h3 {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  color: #da7635;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.comparison-wrapper {
+  border-radius: 10px;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #29b6f6;
+  padding: 1rem;
+  width: 30%;
+  height: fit-content;
+}
+
+.company-header {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.company-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.comparison-name {
+  font-size: 18px;
+}
+
+a:link {
+  color: #da7635;
+}
+
+a:visited {
+  color: #da7635;
+}
+
+a:hover {
+  color: #29b6f6;
+}
+
+.comparison-symbol {
+  font-size: 15px;
+}
+
+.comparison-img {
+  width: 30px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  border-radius: 2px;
+}
+
+.comparison-price,
+.comparison-percentage {
+  font-size: 15px;
+}
+
+.comparison-bio {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.comparison-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comparison-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.comparison-bio {
+  text-align: justify;
+}
+
+.comparison-chart {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-canvas {
+  width: 200px;
+  height: 100px;
+}
+
+.page-footer {
+  background-color: #29b6f6;
+  color: white;
+  padding: 1rem 0;
+}
